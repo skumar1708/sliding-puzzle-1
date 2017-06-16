@@ -52,13 +52,17 @@ var app = {
     initializePuzzle:function(){
     	var context = document.getElementById('puzzle').getContext('2d');
 var slideSound = document.getElementById("sp");
-var img = new Image();
-img.src = '../img/3x3.jpg';
+// var img = new Image();
+// img.src = '../img/3x3.jpg';
+// img.onload = function() { 
+// drawTiles();
+// };
+//img.addEventListener('load', drawTiles, false);
+
+var img = document.getElementById('myImg');
 img.onload = function() { 
 drawTiles();
 };
-//img.addEventListener('load', drawTiles, false);
-
 var boardSize = document.getElementById('puzzle').width;
 var tileCount = 3;
 
