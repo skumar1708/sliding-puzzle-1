@@ -237,7 +237,7 @@ body {
 canvas{
 
 	display: block;
-    margin-left: auto;
+    margin-left: 30%;
     margin-right: auto;
-    margin-top:15%;
+    margin-top: 30%;
 }
