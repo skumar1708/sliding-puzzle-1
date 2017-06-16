@@ -54,7 +54,10 @@ var app = {
 var slideSound = document.getElementById("sp");
 var img = new Image();
 img.src = '../img/3x3.jpg';
-img.addEventListener('load', drawTiles, false);
+img.onload = function() { 
+drawTiles();
+};
+//img.addEventListener('load', drawTiles, false);
 
 var boardSize = document.getElementById('puzzle').width;
 var tileCount = 3;
