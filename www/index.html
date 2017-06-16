@@ -1,1 +1,32 @@
-
+<!doctype html>
+<html>
+<head>
+  <title>Sliding Puzzle</title>
+  <style>
+  .picture {
+    border: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+  <div id="title">
+    <h2>Sliding Puzzle</h2>
+  </div>
+  <div id="slider">
+    <form>
+      <label>Easy</label>
+      <input type="range" id="scale" value="5" min="1" max="5" step="1">
+      <label>Hard</label>
+    </form>
+    <br>
+  </div>
+  <audio controls id="sp" style="display:none;">
+  		<source src="audio/slide-sound.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+  <div id="main" class="main">
+    <canvas id="puzzle" width="480px" height="480px"></canvas>
+  </div>
+  <script src="js/sliderandom.js"></script>
+</body>
+</html>
