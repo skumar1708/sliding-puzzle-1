@@ -241,3 +241,11 @@ canvas{
     margin-right: auto;
     margin-top: 30%;
 }
+#hplogo-complex{
+margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    position: absolute;
+}
